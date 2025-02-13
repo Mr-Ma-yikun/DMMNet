@@ -24,7 +24,7 @@ If you find this work helpful, please consider citing:
 
 ```
 @article{ma2025eliminating,
-  title={Eliminating Moir{\'e} Patterns Across Diverse Image Resolutions via DMMNet},
+  title={Eliminating Moire Patterns Across Diverse Image Resolutions via DMMNet},
   author={Ma, Yikun and Qi, Haoran and Jin, Zhi},
   journal={IEEE Transactions on Multimedia},
   year={2025},
