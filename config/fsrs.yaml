@@ -1,0 +1,33 @@
+GENERAL:
+  GPU_ID: 3
+  SEED: 123
+  WORKER: 8
+  SAVE_PREFIX: './out_dir/fsrs'
+  EXP_NAME: 'fsrs_out'
+
+DATA:
+  DATA_TYPE:  # Please specify the type of the dataset (select from AIM/UHDM/FHDMi/TIP)
+  TRAIN_DATASET: # The training data path, e.g., ./uhdm_data/Train
+  TEST_DATASET: # The test data path, e.g., ./uhdm_data/Test
+
+MODEL:
+  EN_FEATURE_NUM: 48 # The initial channel number of dense blocks of encoder
+  EN_INTER_NUM: 32 # The growth rate (intermediate channel number) of dense blocks of encoder
+  DE_FEATURE_NUM: 64 # The initial channel number of dense blocks of decoder
+  DE_INTER_NUM: 32 # The growth rate (intermediate channel number) of dense blocks of decoder
+  SAM_NUMBER: 1 # The number of SAM for each encoder or decoder level; set 1 for our ESDNet, and 2 for ESDNet-L
+
+TRAIN:
+  BATCH_SIZE: 4
+  LOADER: crop # The loading way for training data, e.g., crop, resize, default; see ./dataset/load_data.py
+  CROP_SIZE: 512 # Set the crop size if LOADER==crop
+  SAVE_ITER: 500 # Save training images/results at each SAVE_ITER*n iter
+  LOAD_EPOCH: False # If specify it, loading the corresponding model for resuming training
+
+SOLVER:
+  EPOCHS: 100 # The total training epochs
+  T_0: 50 # The total epochs for the first learning cycle (learning rate warms up then)
+  T_MULT: 1 # The learning cycle would be (T_0, T_0*T_MULT, T_0*T_MULT^2, T_0*T_MULT^3, ...)
+  ETA_MIN: 0.000001 # Initial learning rate in each learning cycle
+  BASE_LR: 0.0002 # Learning rate in the end of each learning cycle
+
