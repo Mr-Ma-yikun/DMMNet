@@ -34,7 +34,9 @@ python train_fsrs.py --config ./config/fsrs.yaml
 ```
 
 # Acknowledgement
-This work was supported by [Frontier Vision Lab](https://fvl2020.github.io/fvl.github.com/), SUN YAT-SEN University.
+This work was supported by [Frontier Vision Lab](https://fvl2020.github.io/fvl.github.com/), SUN YAT-SEN University. 
+We would like to thank the authors of [UHDM](https://github.com/CVMI-Lab/UHDM) for their great work and generously providing source codes, 
+which inspired our work and helped us a lot in the implementation.
 
 # Citation
 If you find this work helpful, please consider citing:
