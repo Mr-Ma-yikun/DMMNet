@@ -18,14 +18,14 @@ features from various semantic levels, we introduce a pioneering plug-and-play A
 # Getting Started
 
 ## 1. Running:
-```
+You are free to choose to train our DMMNet on a specific dataset. If you want to improve the generalization across different resolutions, we recommend mixing different datasets.
 
+```
 #Train mmds in the first stage
 python train_mmds_waca.py --config ./config/mmds.yaml
 
 #Then train fsrs 
 python train_fsrs.py --config ./config/fsrs.yaml
-
 ```
 
 # Acknowledgement
