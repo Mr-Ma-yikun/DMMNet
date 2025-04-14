@@ -19,6 +19,7 @@ features from various semantic levels, we introduce a pioneering plug-and-play A
 
 ## 1. Running:
 You are free to choose to train our DMMNet on a specific dataset. If you want to improve the generalization across different resolutions, we recommend mixing different datasets.
+Moreover, in subsequent experiments, we found that using cosine distance as the color loss also yields good results (refer to the loss_util.py). 
 
 ```
 #Train mmds in the first stage
