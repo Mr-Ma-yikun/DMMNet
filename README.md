@@ -19,11 +19,13 @@ features from various semantic levels, we introduce a pioneering plug-and-play A
 
 ## 1. Running:
 '''
+
 #Train mmds in the first stage
 python train_mmds_waca.py --config ./config/mmds.yaml
 
 #Then train fsrs 
 python train_fsrs.py --config ./config/fsrs.yaml
+
 '''
 
 # Acknowledgement
