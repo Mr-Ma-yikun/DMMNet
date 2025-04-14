@@ -26,10 +26,10 @@ You are free to choose to train our DMMNet on a specific dataset. If you want to
 Moreover, in subsequent experiments, we found that using cosine distance as the color loss also yields good results (refer to the loss_util.py). 
 
 ```
-#Train mmds in the first stage
+# Train mmds in the first stage
 python train_mmds_waca.py --config ./config/mmds.yaml
 
-#Then train fsrs 
+# Then train fsrs 
 python train_fsrs.py --config ./config/fsrs.yaml
 ```
 
