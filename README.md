@@ -16,10 +16,15 @@ features from various semantic levels, we introduce a pioneering plug-and-play A
 # Installation
 
 # Getting Started
-## 1. Download Pre-trained Models:
 
-## 2. Running:
+## 1. Running:
+'''
+#Train mmds in the first stage
+python train_mmds_waca.py --config ./config/mmds.yaml
 
+#Then train fsrs 
+python train_fsrs.py --config ./config/fsrs.yaml
+'''
 
 # Acknowledgement
 This work was supported by [Frontier Vision Lab](https://fvl2020.github.io/fvl.github.com/), SUN YAT-SEN University.
