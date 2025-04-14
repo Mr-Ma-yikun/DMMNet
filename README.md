@@ -40,6 +40,8 @@ If you find this work helpful, please consider citing:
   author={Ma, Yikun and Qi, Haoran and Jin, Zhi},
   journal={IEEE Transactions on Multimedia},
   year={2025},
-  publisher={IEEE}
+  publisher={IEEE},
+  pages={1-11},
+  doi={10.1109/TMM.2025.3535324}
 }
 ```
