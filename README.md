@@ -16,7 +16,7 @@ features from various semantic levels, we introduce a pioneering plug-and-play A
 # Getting Started
 
 ## 1. Installation
-
+Our env is cuda-12.0.
 ```
 pip install -r requirements.txt
 ```
